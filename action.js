@@ -1,2 +1,3 @@
 let spinner = document.querySelector(".spinner");
-document.querySelector(".toggle").classList.toggle("clickEvent");
+let toggle = document.querySelector(".toggle");
+let toggle__btn = document.querySelector(".toggle__btn");
