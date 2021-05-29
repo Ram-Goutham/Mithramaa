@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+nav{
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.349);
+    display: flex;
+    align-items: center;
+}
+
+.nav__bar{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo{
+    
+}
+.menu__toggle{
+    height: 50px;
+}
+.menu__list{
+    width: 100%;
+    display: flex;
+}
+.menu__list > li:hover > a{
+    color: coral;
+}
+.menu__list > li{
+    line-height: 52px;
+}
+.menu__list > li:hover .submenu{
+    display: block;
+}
+.menu__com{
+    padding-left: 30px;
+}
+.submenu{
+ display: none;
+ background-color: cornflowerblue;
+ width: 50px;
+ height: 60px;
+ position: absolute;
+ top: 50px;
+ 
+}
+
+.toggle span{
+    height: 3px;
+    width: 25px;
+    margin:3px 0;
+    border-radius: 6px;
+    background-color: lightcoral;
+    display: block;
+}
+.toggle span:nth-child(1){
+    animation: first 1s alternate infinite;
+    background-color: darkorange;
+    
+}
+.toggle span:nth-child(2){
+    animation: second 3s alternate infinite;
+    background-color: white;
+    
+}
+.toggle span:nth-child(3){
+    animation: third 1.5s alternate infinite;
+    background-color: green;
+    
+}
+.toggle span:nth-child(4){
+    background-color: transparent;
+}
+@keyframes first{
+    0%{
+        margin-left: 60%;
+        
+    }
+    100%{
+        margin-left: -50%;
+    }
+}
+@keyframes second{
+    0%{
+        margin-left: -80%;
+    }
+    100%{
+        margin-left: 50%;
+    }
+}
+@keyframes third{
+    0%{
+        margin-left: 80%;
+    }
+    100%{
+        margin-left:-80% ;
+    }
+}
