@@ -1,12 +1,15 @@
 let spinner = document.querySelector(".spinner");
 let toggle = document.querySelector(".toggle");
-let toggle__btn = document.querySelector(".toggle__btn");
+let toggleBtn = document.querySelector(".toggle__btn");
 let chow = 0;
 let Button = document.querySelector(".Button");
-
+let menuToggle = document.querySelector(".menu__toggle")
 
 function myFunction(){
     spinner.classList.toggle("block");
-    toggle__btn.classList.toggle("none");
+    toggleBtn.classList.toggle("none");
+    menuToggle.classList.toggle("show");
 };
+
+
 
