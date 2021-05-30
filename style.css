@@ -37,15 +37,17 @@ nav{
 .menu__list > li{
     line-height: 52px;
 }
-.menu__list > li:hover .submenu{
-    display: block;
-}
 .menu__com{
     padding-left: 30px;
 }
-
+.toggle__btn.none{
+    display :none;
+}
 .spinner{
-    display: none;
+    display: none ;
+}
+.spinner.block{
+    display:block;
 }
 .toggle span{
     height: 3px;
