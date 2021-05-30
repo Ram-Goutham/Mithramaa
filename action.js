@@ -4,7 +4,7 @@ let toggleBtn = document.querySelector(".toggle__btn");
 let chow = 0;
 let Button = document.querySelector(".Button");
 let menuToggle = document.querySelector(".menu__toggle");
-let element = document.querySelector('.menu__list','::after');
+let element = document.querySelector('.menu__list');
 console.log(element);
 
 function myFunction(){
